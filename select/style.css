@@ -1,0 +1,44 @@
+body {
+	background-color: rgba(10, 10, 10, 1);
+	font-family: cursive
+}
+.glow {
+	margin-top: 10vh;
+	font-size: 3.75vw;
+	color: #fff;
+	text-align: center;
+	animation: glow 2s ease-in-out infinite alternate
+}
+@keyframes glow {
+	from {
+		text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px yellow, 0 0 50px gold, 0 0 60px orange, 0 0 70px darkorange
+	}
+	to {
+		text-shadow: 0 0 20px #fff, 0 0 30px orangered, 0 0 40px red, 0 0 50px darkred, 0 0 60px brown, 0 0 70px rgb(63, 15, 15), 0 0 80px rgb(31, 27, 27)
+	}
+}
+.selector button {
+	border: none;
+	text-align: center;
+	text-decoration: none;
+	font-size: 24px;
+	transition-duration: 0.25s;
+	background-color: white;
+	color: black;
+	border: 2px solid blue;
+	height: 50px;
+	min-width: 70px;
+  padding-left: 7px;
+  padding-right: 7px;
+	margin-bottom: 2.5px;
+	margin-top: 2.5px
+}
+.clickable:hover {
+	background-color: blue;
+	color: white
+}
+.selector {
+	margin: auto;
+	width: max-content;
+	max-width: fit-content
+}
